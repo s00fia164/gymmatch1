@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="GymMatch Logo" id="logo">
+        <h1>GymMatch</h1>
+        <p>Hej!! Jestem GymMatch, od dzisiaj będę twoim GymBro!! 😊</p>
+        <p>GymMatch to aplikacja, która pomoże Ci znaleźć GymBuddy lub trenera personalnego.</p>
+    </header>
+
+    <section id="gymbuddy">
+        <h2>Jeśli potrzebujesz GymBuddy:</h2>
+        <div class="swiper-container">
+            <div class="swipe-img">
+                <img src="images/user1.jpg" alt="User 1">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user2.jpg" alt="User 2">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user3.jpg" alt="User 3">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user4.jpg" alt="User 4">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user5.jpg" alt="User 5">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user6.jpg" alt="User 6">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user7.jpg" alt="User 7">
+            </div>
+            <div class="swipe-img">
+                <img src="images/user8.jpg" alt="User 8">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="like">👍</button>
+            <button id="dislike">👎</button>
+        </div>
+    </section>
+
+    <section id="personal-trainer">
+        <h2>Jeśli potrzebujesz trenera personalnego:</h2>
+        <form id="filter-form">
+            <label for="sport">Wybierz sport:</label>
+            <select id="sport">
+                <option value="all">Wszystkie</option>
+                <option value="pilates">Pilates</option>
+                <option value="siłownia">Siłownia</option>
+                <option value="joga">Joga</option>
+                <option value="boks">Boks</option>
+                <option value="cardio">Cardio</option>
+                <option value="bieganie">Bieganie</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="kulturystyka">Kulturystyka</option>
+            </select>
+
+            <label for="gender">Płeć:</label>
+            <select id="gender">
+                <option value="all">Wszystkie</option>
+                <option value="male">Mężczyzna</option>
+                <option value="female">Kobieta</option>
+            </select>
+
+            <label for="experience">Doświadczenie (lata):</label>
+            <input type="number" id="experience" value="0" min="0">
+
+            <label for="goals">Cele:</label>
+            <input type="text" id="goals" placeholder="np. Odchudzanie, zdrowy styl życia">
+        </form>
+
+        <table id="trainer-table">
+            <thead>
+                <tr>
+                    <th>Imię i nazwisko</th>
+                    <th>Sport</th>
+                    <th>Płeć</th>
+                    <th>Doświadczenie (lata)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Trenerzy zostaną dodani dynamicznie przez JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <h3>Planujemy dodać:</h3>
+        <ul>
+            <li>Integracja z siłowniami</li>
+            <li>Więcej filtrów</li>
+            <li>System rekomendacji trenera</li>
+            <li>Kalendarz treningów</li>
+            <li>Współpraca z siłowniami</li>
+            <li>AI Coach do tworzenia planów treningowych i diet</li>
+        </ul>
+        <p>Kontakt: info@gymmatch.com</p>
+    </footer>
+
+    <!-- Import Hammer.js z CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
